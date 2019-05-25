@@ -11,13 +11,11 @@ wget https://sonarcloud.io/static/cpp/build-wrapper-linux-x86.zip
 
 unzip sonar-scanner-cli-3.3.0.1492-linux.zip
 unzip build-wrapper-linux-x86.zip
-export PATH=$PATH:/home/travis/team-onestone/Test/sonarqube/sonar-scanner-3.3.0.1492-linux/bin
-export PATH=$PATH:/home/travis/team-onestone/Test/sonarqube/unzip build-wrapper-linux-x86
 cd ..
 
 echo "RUNNING SONARCLOUD BUILD WRAPPER"
-build-wrapper-linux-x86 --out-dir bw-outputs ./build.sh
+./sonarqube/build-wrapper-linux-x86/build-wrapper-linux-x86 --out-dir bw-outputs ./build.sh
 
 echo "RUNNING SONARCLOUD SCANNER"
-sonar-scanner-3.3.0.1492-linux \
+./sonarqube/sonar-scanner-3.3.0.1492-linuxbin/sonar-scanner-3.3.0.1492-linux \
 -Dsonar.login=$SONAR_TOKEN
