@@ -33,4 +33,4 @@ chmod +x build.sh
 
 echo "RUNNING SONARCLOUD SCANNER"
 ./sonarqube/sonar-scanner-3.3.0.1492-linux/bin/sonar-scanner \
--Dsonar.login=$SONAR_TOKEN -x
+-Dsonar.login=$SONAR_TOKEN -X
