@@ -9,6 +9,19 @@ wget https://sonarcloud.io/static/cpp/build-wrapper-linux-x86.zip
 unzip sonar-scanner-cli-3.3.0.1492-linux.zip
 unzip build-wrapper-linux-x86.zip
 ls -la
+
+cd sonar-scanner-cli-3.3.0.1492-linux
+ls -la
+cd bin
+ls -la
+pwd
+cd ../..
+
+cd build-wrapper-linux-x86
+ls -la
+pwd
+cd ..
+
 cd ..
 
 echo "RUNNING SONARCLOUD BUILD WRAPPER"
