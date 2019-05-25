@@ -19,7 +19,7 @@ pwd
 cd ../..
 
 cd build-wrapper-linux-x86
-chmod +x build-wrapper-linux-x86
+chmod +x build-wrapper-linux-x86-64
 ls -la
 pwd
 cd ..
@@ -29,8 +29,8 @@ cd ..
 echo "RUNNING SONARCLOUD BUILD WRAPPER"
 ls -la
 chmod +x build.sh
-./sonarqube/build-wrapper-linux-x86/build-wrapper-linux-x86 --out-dir bw-outputs ./build.sh
+./sonarqube/build-wrapper-linux-x86/build-wrapper-linux-x86-64 --out-dir bw-outputs ./build.sh
 
 echo "RUNNING SONARCLOUD SCANNER"
 ./sonarqube/sonar-scanner-3.3.0.1492-linux/bin/sonar-scanner \
--Dsonar.login=$SONAR_TOKEN
+-Dsonar.login=$SONAR_TOKEN -x
