@@ -1,0 +1,6 @@
+addons:
+  sonarcloud:
+    organization: team-onestone-github
+
+script:
+  - sonar-scanner
