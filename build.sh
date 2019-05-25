@@ -6,8 +6,8 @@ echo "BUILDING"
 #mkdir build
 #g++ -Wall -o build/main src/main.cpp
 
-cmake .
-make 
+#cmake .
+#make 
 
 RC=$?
 
