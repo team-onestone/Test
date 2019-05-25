@@ -3,4 +3,5 @@ addons:
     organization: team-onestone-github
 
 script:
+  - build-wrapper --out-dir bw-outputs ./build.sh
   - sonar-scanner
