@@ -8,20 +8,14 @@ wget https://sonarcloud.io/static/cpp/build-wrapper-linux-x86.zip
 
 unzip sonar-scanner-cli-3.3.0.1492-linux.zip
 unzip build-wrapper-linux-x86.zip
-ls -la
 
 cd sonar-scanner-3.3.0.1492-linux
-ls -la
 cd bin
 chmod +x sonar-scanner
-ls -la
-pwd
 cd ../..
 
 cd build-wrapper-linux-x86
 chmod +x build-wrapper-linux-x86-64
-ls -la
-pwd
 cd ..
 
 cd ..
