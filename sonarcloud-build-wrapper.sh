@@ -1,8 +1,5 @@
 #!/bin/bash
 
-echo "UPDATING THE TRAVIS RUNNER"
-apt update && apt upgrade -y
-
 echo "INSTALLING SONAR CUBE SANNER & WRAPPER"
 mkdir sonarqube && cd sonarqube
 
@@ -11,6 +8,7 @@ wget https://sonarcloud.io/static/cpp/build-wrapper-linux-x86.zip
 
 unzip sonar-scanner-cli-3.3.0.1492-linux.zip
 unzip build-wrapper-linux-x86.zip
+ls -la
 cd ..
 
 echo "RUNNING SONARCLOUD BUILD WRAPPER"
