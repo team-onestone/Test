@@ -1,9 +1,4 @@
 sudo: true
 
-addons:
-  sonarcloud:
-    organization: team-onestone-github
-
 script:
   - ./sonarcloud-build-wrapper.sh
-  - sonar-scanner
