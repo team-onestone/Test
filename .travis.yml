@@ -3,5 +3,5 @@ addons:
     organization: team-onestone-github
 
 script:
-  - sonarcloud-build-wrapper.sh
+  - ./sonarcloud-build-wrapper.sh
   - sonar-scanner
