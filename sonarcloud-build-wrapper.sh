@@ -16,8 +16,8 @@ export PATH=$PATH:/home/travis/team-onestone/Test/sonarqube/unzip build-wrapper-
 cd ..
 
 echo "RUNNING SONARCLOUD BUILD WRAPPER"
-build-wrapper --out-dir bw-outputs ./build.sh
+build-wrapper-linux-x86 --out-dir bw-outputs ./build.sh
 
 echo "RUNNING SONARCLOUD SCANNER"
-sonar-scanner \
+sonar-scanner-3.3.0.1492-linux \
 -Dsonar.login=$SONAR_TOKEN
