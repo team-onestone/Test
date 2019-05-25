@@ -3,8 +3,12 @@ echo "REMOVE PREVIOUS BUILD"
 rm -rf build
 
 echo "BUILDING"
-mkdir build
-g++ -Wall -o build/main src/main.cpp
+#mkdir build
+#g++ -Wall -o build/main src/main.cpp
+
+cmake .
+make 
+
 RC=$?
 
 if [ $RC -ne 0 ]; then
